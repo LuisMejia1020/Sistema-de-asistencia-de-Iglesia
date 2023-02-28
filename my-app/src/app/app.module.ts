@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { AsistenciaComponent } from './asistencia/asistencia.component';
 import { RegistroUsuarioComponent } from './registro-usuario/registro-usuario.component';
 import { LoginUsuarioComponent } from './login-usuario/login-usuario.component';
-import { ReunionesComponent } from './reuniones/reuniones.component';
+import { AfternoonPipe, MorningPipe, ReunionesComponent } from './reuniones/reuniones.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,9 @@ import { ReunionesComponent } from './reuniones/reuniones.component';
     AsistenciaComponent,
     RegistroUsuarioComponent,
     LoginUsuarioComponent,
-    ReunionesComponent
+    ReunionesComponent,
+    MorningPipe,
+    AfternoonPipe
   ],
   imports: [
     BrowserModule, FormsModule

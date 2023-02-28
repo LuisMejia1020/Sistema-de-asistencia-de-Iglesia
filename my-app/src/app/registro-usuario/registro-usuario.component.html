@@ -1,8 +1,23 @@
 <form>
     <label>
-      Nombre de usuario:
-      <input type="text" name="username" [(ngModel)]="username">
+      primer Nombre:
+      <input type="text" name="primerNombre" [(ngModel)]="primerNombre">
     </label>
+
+    <label>
+        segundo Nombre:
+        <input type="text" name="segundoNombre" [(ngModel)]="segundoNombre">
+      </label>
+
+      <label>
+        primer apellido:
+        <input type="text" name="primerApellido" [(ngModel)]="primerApellido">
+      </label>
+
+      <label>
+        segundo apellido:
+        <input type="text" name="segundoApellido" [(ngModel)]="segundoApellido">
+      </label>
   
     <label>
       Correo electrónico:
@@ -14,5 +29,5 @@
       <input type="password" name="password" [(ngModel)]="password">
     </label>
   
-    <button (click)="registrarse('janflores', 'janis@gmail.com', 'royale')">Registrarse</button>
+    <button (click)="registrarse('Jani','Graciela','flores', 'Lama', 'janflores', 'janis@gmail.com', 'royale')">Registrarse</button>
   </form>
