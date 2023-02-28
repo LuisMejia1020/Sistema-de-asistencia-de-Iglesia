@@ -21,7 +21,5 @@ export class AsistenciaComponent {
     { nombre: 'Jose', asistio: false },
     { nombre: 'Francisco', asistio: false },
     { nombre: 'Carlos', asistio: false },
-
-    
   ];
 }

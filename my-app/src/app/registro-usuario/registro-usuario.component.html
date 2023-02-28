@@ -1,0 +1,18 @@
+<form>
+    <label>
+      Nombre de usuario:
+      <input type="text" name="username" [(ngModel)]="username">
+    </label>
+  
+    <label>
+      Correo electrónico:
+      <input type="email" name="email" [(ngModel)]="email">
+    </label>
+  
+    <label>
+      Contraseña:
+      <input type="password" name="password" [(ngModel)]="password">
+    </label>
+  
+    <button (click)="registrarse('janflores', 'janis@gmail.com', 'royale')">Registrarse</button>
+  </form>

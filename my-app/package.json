@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "generateComponent":"ng generate component asistencia"
+    "generateComponent":"ng generate component Registro-Usuario"
   },
   "private": true,
   "dependencies": {
