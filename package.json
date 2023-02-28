@@ -1,0 +1,23 @@
+{
+  "name": "sistema-de-asistencia-de-iglesia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nuevaAplicacion":"ng new my-app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisMejia1020/Sistema-de-asistencia-de-Iglesia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuisMejia1020/Sistema-de-asistencia-de-Iglesia/issues"
+  },
+  "homepage": "https://github.com/LuisMejia1020/Sistema-de-asistencia-de-Iglesia#readme",
+  "dependencies": {
+    "@angular/cli": "^15.2.0"
+  }
+}
