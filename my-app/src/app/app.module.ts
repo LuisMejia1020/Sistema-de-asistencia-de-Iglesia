@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { AsistenciaComponent } from './asistencia/asistencia.component';
 import { RegistroUsuarioComponent } from './registro-usuario/registro-usuario.component';
 import { LoginUsuarioComponent } from './login-usuario/login-usuario.component';
+import { ReunionesComponent } from './reuniones/reuniones.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AsistenciaComponent,
     RegistroUsuarioComponent,
-    LoginUsuarioComponent
+    LoginUsuarioComponent,
+    ReunionesComponent
   ],
   imports: [
     BrowserModule, FormsModule
