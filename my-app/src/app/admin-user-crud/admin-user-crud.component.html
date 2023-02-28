@@ -1,1 +1,25 @@
 <p>admin-user-crud works!</p>
+<h2>Usuarios</h2>
+
+<!-- Mostrar la lista de usuarios -->
+<ul>
+  <li *ngFor="let usuario of usuarios">
+    {{ usuario.nombre }} ({{ usuario.email }}) 
+    <button (click)="editarUsuario(usuario)">Editar</button>
+    <button (click)="borrarUsuario(usuario)">Borrar</button>
+  </li>
+</ul>
+
+<!-- Formulario para crear o actualizar usuarios -->
+<form #usuarioForm="ngForm" (ngSubmit)="guardarUsuario()">
+  <input type="hidden" name="id" [(ngModel)]="usuarioSeleccionado.id">
+  <div>
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" [(ngModel)]="usuarioSeleccionado.nombre" required>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" name="email" [(ngModel)]="usuarioSeleccionado.email" required>
+  </div>
+  <button type="submit">{{ modoEdicion ? 'Actualizar' : 'Crear' }}</button>
+</form>
