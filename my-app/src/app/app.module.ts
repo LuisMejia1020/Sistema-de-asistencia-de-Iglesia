@@ -6,6 +6,9 @@ import { AsistenciaComponent } from './asistencia/asistencia.component';
 import { RegistroUsuarioComponent } from './registro-usuario/registro-usuario.component';
 import { LoginUsuarioComponent } from './login-usuario/login-usuario.component';
 import { AfternoonPipe, MorningPipe, ReunionesComponent } from './reuniones/reuniones.component';
+import { AdminUserCrudComponent } from './admin-user-crud/admin-user-crud.component';
+import { ListaUsuariosComponent } from './lista-usuarios/lista-usuarios.component';
+;
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { AfternoonPipe, MorningPipe, ReunionesComponent } from './reuniones/reun
     LoginUsuarioComponent,
     ReunionesComponent,
     MorningPipe,
-    AfternoonPipe
+    AfternoonPipe,
+    AdminUserCrudComponent,
+    ListaUsuariosComponent,
+    
   ],
   imports: [
     BrowserModule, FormsModule

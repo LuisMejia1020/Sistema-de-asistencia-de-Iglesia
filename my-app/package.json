@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "generateComponent":"ng generate component reuniones"
+    "generateComponent":"ng generate component Lista-Usuarios",
+    "generateService": "ng generate service user"
   },
   "private": true,
   "dependencies": {

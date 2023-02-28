@@ -13,3 +13,12 @@ export interface ILogin {
     password: string
 }
 
+export interface IAdminUser{
+    id: number
+    nombre: string
+    email: string
+    password: string
+}
+
+
+

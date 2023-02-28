@@ -1,6 +1,7 @@
 import { Component, Pipe, PipeTransform } from '@angular/core';
 
 interface IReuniones {
+  lider:string
   nombre:string
   inicio: string
 }
@@ -26,14 +27,14 @@ export class AfternoonPipe implements PipeTransform {
 })
 export class ReunionesComponent {
   meetings: IReuniones[] = [
-    { nombre: 'Reunión 0', inicio: '6:00 am' },
-    { nombre: 'Reunión 6', inicio: '8:30 am' },
-    { nombre: 'Reunión 1', inicio: '10:00 am' },
-    { nombre: 'Reunión 2', inicio: '11:30 am' },
-    { nombre: 'Reunión 3', inicio: '2:00 pm' },
-    { nombre: 'Reunión 4', inicio: '4:30 pm' },
-    { nombre: 'Reunión 5', inicio: '6:00 pm' },
-    { nombre: 'Reunión 6', inicio: '10:30 pm' },
+    { lider: 'Cash Luna',nombre: 'Reunión 0', inicio: '6:00 am' },
+    { lider: 'Cash Luna',nombre: 'Reunión 6', inicio: '8:30 am' },
+    { lider: 'Cash Luna',nombre: 'Reunión 1', inicio: '10:00 am' },
+    { lider: 'Cash Luna',nombre: 'Reunión 2', inicio: '11:30 am' },
+    { lider: 'Marcos Witt',nombre: 'Reunión 3', inicio: '2:00 pm' },
+    { lider: 'Marcos Witt',nombre: 'Reunión 4', inicio: '4:30 pm' },
+    { lider: 'Marcos Witt',nombre: 'Reunión 5', inicio: '6:00 pm' },
+    { lider: 'Marcos Witt',nombre: 'Reunión 8', inicio: '10:30 pm' },
   ];
     
   
