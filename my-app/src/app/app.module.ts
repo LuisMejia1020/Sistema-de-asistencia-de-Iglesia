@@ -8,6 +8,7 @@ import { LoginUsuarioComponent } from './login-usuario/login-usuario.component';
 import { AfternoonPipe, MorningPipe, ReunionesComponent } from './reuniones/reuniones.component';
 import { AdminUserCrudComponent } from './admin-user-crud/admin-user-crud.component';
 import { ListaUsuariosComponent } from './lista-usuarios/lista-usuarios.component';
+import { ReunionComponent } from './reunion/reunion.component';
 ;
 
 @NgModule({
@@ -21,6 +22,7 @@ import { ListaUsuariosComponent } from './lista-usuarios/lista-usuarios.componen
     AfternoonPipe,
     AdminUserCrudComponent,
     ListaUsuariosComponent,
+    ReunionComponent,
     
   ],
   imports: [
