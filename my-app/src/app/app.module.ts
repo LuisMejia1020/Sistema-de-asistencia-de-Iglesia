@@ -10,6 +10,7 @@ import { AdminUserCrudComponent } from './admin-user-crud/admin-user-crud.compon
 import { ListaUsuariosComponent } from './lista-usuarios/lista-usuarios.component';
 import { ReunionComponent } from './reunion/reunion.component';
 import { AccederSistemaUsuarioComponent } from './acceder-sistema-usuario/acceder-sistema-usuario.component';
+import { LoginAdministradorComponent } from './login-administrador/login-administrador.component';
 ;
 
 @NgModule({
@@ -25,6 +26,7 @@ import { AccederSistemaUsuarioComponent } from './acceder-sistema-usuario/accede
     ListaUsuariosComponent,
     ReunionComponent,
     AccederSistemaUsuarioComponent,
+    LoginAdministradorComponent,
     
   ],
   imports: [
