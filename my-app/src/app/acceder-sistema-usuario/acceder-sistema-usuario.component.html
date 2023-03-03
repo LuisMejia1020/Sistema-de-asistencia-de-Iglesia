@@ -1,0 +1,16 @@
+<p>acceder-sistema-usuario works!</p>
+<div>
+    <label>Seleccione el tipo de usuario:</label>
+    <button (click)="setTipoUsuario('normal')">Usuario normal</button>
+    <button (click)="setTipoUsuario('admin')">Usuario administrador</button>
+  </div>
+  
+  <div *ngIf="tipoUsuario === 'normal'">
+    <!-- Contenido para usuario normal -->
+    <p>Bienvenido usuario normal</p>
+  </div>
+  
+  <div *ngIf="tipoUsuario === 'admin'">
+    <!-- Contenido para usuario administrador -->
+    <p>Bienvenido usuario administrador</p>
+  </div>
