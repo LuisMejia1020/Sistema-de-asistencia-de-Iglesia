@@ -1,4 +1,4 @@
-<p>login usuario works</p>
+<!-- <p>login usuario works</p>
 <form>
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB3nS396Ie2YRgkAbLob612mCJ3OLTEpOkhg&usqp=CAU" alt="">
     <label>Hola Usuario, por favor ingrese sus datos</label>
@@ -13,4 +13,87 @@
     </label>
   
     <button (click)="iniciarSesion('janiflores@gmail.com', 'royale')">Iniciar sesión</button>
-  </form>
+  </form> -->
+
+<div class="login">
+  <br /><br />
+  <div class="container">
+    <div class="row align-items-center" style="height: 80vh">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+        <div class="card border-0">
+          <div class="card-body">
+            <form action="/action_page.php">
+              <div id="logo" class="text-center">
+                <img
+                  src="../../assets/img/IPresGS logo.png"
+                  class="img-fluid mx-auto"
+                  width="40%"
+                  alt=""
+                  style="margin-bottom: 15px;"
+                />
+              </div>
+              <h3 style="text-align: center; color: #000">
+                Asistencia | IpresGS
+              </h3>
+              <div class="mb-3 mt-3">
+                <label for="user" class="form-label" style="font-style: regular"
+                  >Usuario:</label
+                >
+                <input
+                  type="text"
+                  class="form-control border-0"
+                  id="user"
+                  placeholder="Ingrese su usuario"
+                  name="user"
+                  required
+                  style="
+                    background-color: #f2f2f2;
+                    color: rgba(128, 126, 126, 0.6);
+                    border-radius: 10px;
+                  "
+                />
+              </div>
+              <div class="mb-3">
+                <label for="pwd" class="form-label" style="font-style: regular"
+                  >Contraseña:</label
+                >
+                <input
+                  type="password"
+                  class="form-control border-0"
+                  id="pwd"
+                  placeholder="Ingrese su contraseña"
+                  name="pswd"
+                  required
+                  style="
+                    background-color: #f2f2f2;
+                    color: rgba(128, 126, 126, 0.6);
+                    border-radius: 10px;
+                  "
+                />
+              </div>
+              <div class="d-grid">
+                <!-- <button type="submit" class="btn btn-primary btn-block">
+                  Iniciar Sesion
+                </button> -->
+                <button
+                  type="submit"
+                  class="btn btn-block"
+                  style="
+                    background-color: black;
+                    color: white;
+                    border-radius: 15px;
+                  "
+                >
+                  Iniciar Sesion
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+  </div>
+  <br /><br />
+</div>
