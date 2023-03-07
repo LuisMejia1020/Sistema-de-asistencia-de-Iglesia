@@ -1,17 +1,81 @@
-<p>acceder-sistema-usuario works!</p>
+<!-- <p>acceder-sistema-usuario works!</p>
 <div>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB3nS396Ie2YRgkAbLob612mCJ3OLTEpOkhg&usqp=CAU" alt="">
-    <label>Seleccione el tipo de usuario:</label>
-    <button (click)="setTipoUsuario('normal')">Usuario normal</button>
-    <button (click)="setTipoUsuario('admin')">Usuario administrador</button>
+  <img
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB3nS396Ie2YRgkAbLob612mCJ3OLTEpOkhg&usqp=CAU"
+    alt=""
+  />
+  <label>Seleccione el tipo de usuario:</label>
+  <button (click)="setTipoUsuario('normal')">Usuario normal</button>
+  <button (click)="setTipoUsuario('admin')">Usuario administrador</button>
+</div>
+
+<div *ngIf="tipoUsuario === 'normal'">
+  Contenido para usuario normal
+  <p>Bienvenido usuario normal</p>
+</div>
+
+<div *ngIf="tipoUsuario === 'admin'">
+  Contenido para usuario administrador
+  <p>Bienvenido usuario administrador</p>
+</div> -->
+
+<div class="acceder-sistema">
+  <br /><br />
+  <div class="container">
+    <div class="row align-items-center" style="height: 80vh">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+        <div class="card border-0">
+          <div class="card-body">
+            <form action="/action_page.php">
+              <div id="logo" class="text-center">
+                <img
+                  src="../../assets/img/IPresGS logo.png"
+                  class="img-fluid mx-auto"
+                  width="40%"
+                  alt=""
+                  style="margin-bottom: 15px"
+                />
+              </div>
+              <h3 style="text-align: center; color: #000; margin-bottom: 15px">
+                Asistencia | IpresGS
+              </h3>
+              <div class="texto-instructivo">
+                <p>Acceda al sistema con su usuario</p>
+              </div>
+              <div class="d-grid">
+                <button
+                  type="submit"
+                  class="btn btn-lg btn-block"
+                  style="
+                    background-color: #22296a;
+                    color: white;
+                    border-radius: 15px;
+                  "
+                >
+                  Administrador
+                </button>
+              </div>
+              <br />
+              <div class="d-grid">
+                <button
+                  type="submit"
+                  class="btn btn-lg btn-block"
+                  style="
+                    background-color: black;
+                    color: white;
+                    border-radius: 15px;
+                  "
+                >
+                  Colaborador
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
   </div>
-  
-  <div *ngIf="tipoUsuario === 'normal'">
-    <!-- Contenido para usuario normal -->
-    <p>Bienvenido usuario normal</p>
-  </div>
-  
-  <div *ngIf="tipoUsuario === 'admin'">
-    <!-- Contenido para usuario administrador -->
-    <p>Bienvenido usuario administrador</p>
-  </div>
+  <br /><br />
+</div>
