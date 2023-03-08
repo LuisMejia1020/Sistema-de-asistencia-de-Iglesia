@@ -1,9 +1,31 @@
-.container{
-    margin: 20px auto;
-    max-width: 800px
+.titulo-principal {
+  text-align: center;
+  color: #000;
+  font-size: 40px;
 }
 
-h2,
-h3{
-text-align: center;
+.texto-instructivo {
+  text-align: center;
+  color: #807e7e;
+}
+
+.contenido-reunion {
+  text-align: center;
+}
+.contenido-reunion h2 {
+  color: #000;
+}
+
+.contenido-reunion span {
+  color: #b0afaf;
+  font-size: 20px;
+}
+
+.div-reunion {
+  padding: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f2f2f2;
+  color: rgba(128, 126, 126, 0.6);
+  border-radius: 10px;
 }

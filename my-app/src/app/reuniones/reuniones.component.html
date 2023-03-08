@@ -1,8 +1,47 @@
+<div class="login">
+  <br /><br />
+  <div class="container">
+    <div class="row align-items-center" style="height: 80vh">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+        <div class="card border-0">
+          <div class="card-body">
+            <form action="/action_page.php">
+              <h3 class="titulo-principal">Asistencias</h3>
+              <div class="texto-instructivo">
+                <p>Acceda a la reunion del 19 de marzo</p>
+              </div>
+              <div class="mb-3 mt-3">
+                <div class="card border-0 div-reunion">
+                  <div class="contenido-reunion">
+                    <h2>Mañana</h2>
+                    <span>70 de 120</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3 mt-3">
+                <div class="card border-0 div-reunion">
+                  <div class="contenido-reunion">
+                    <h2>Tarde</h2>
+                    <span>0 de 120</span>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+  </div>
+  <br /><br />
+</div>
+
 <!-- <p>reuniones works!</p> -->
 <!-- Mostrar la lista de usuarios -->
 <!-- <ul>
   <li *ngFor="let meeting of meetings">
-    {{ meeting.nombre }} ({{ meeting.lider }}) 
+    {{ meeting.nombre }} ({{ meeting.lider }})
     <button (click)="editarReunion(meeting)">Editar</button>
     <button (click)="borrarReunion(meeting)">Borrar</button>
   </li>
@@ -10,39 +49,57 @@
 
 <!-- Formulario para crear o actualizar usuarios -->
 <!-- <form #usuarioForm="ngForm" (ngSubmit)="guardarReunion()">
-  <input type="hidden" name="id" [(ngModel)]="reunionSeleccionado.id">
+  <input type="hidden" name="id" [(ngModel)]="reunionSeleccionado.id" />
   <div>
     <label for="nombre">Nombre:</label>
-    <input type="text" name="nombre" [(ngModel)]="reunionSeleccionado.nombre" required>
+    <input
+      type="text"
+      name="nombre"
+      [(ngModel)]="reunionSeleccionado.nombre"
+      required
+    />
   </div>
   <div>
     <label for="lider">Lider:</label>
-    <input type="text" name="lider" [(ngModel)]="reunionSeleccionado.lider" required>
+    <input
+      type="text"
+      name="lider"
+      [(ngModel)]="reunionSeleccionado.lider"
+      required
+    />
   </div>
   <div>
     <label for="hora">Hora:</label>
-    <input type="time" name="inicio" [(ngModel)]="reunionSeleccionado.inicio" required>
+    <input
+      type="time"
+      name="inicio"
+      [(ngModel)]="reunionSeleccionado.inicio"
+      required
+    />
   </div>
-  <button type="submit">{{ modoEdicion ? 'Actualizar' : 'Crear' }}</button>
+  <button type="submit">{{ modoEdicion ? "Actualizar" : "Crear" }}</button>
 </form> -->
 
-<!-- 
-  <div class="container">
-    <h2>Reuniones</h2>
-    <div class="row">
-      <a href="">
-        <div class="col-md-6">
-          <h3>Mañana</h3>
-          <ul>
-            <li *ngFor="let meeting of meetings | morning"> la {{ meeting.nombre }} dara inicio a la hora {{meeting.inicio}} </li>
-          </ul>
-        </div>
-      </a>
+<!-- <div class="container">
+  <h2>Reuniones</h2>
+  <div class="row">
+    <a href="">
       <div class="col-md-6">
-        <h3>Tarde</h3>
+        <h3>Mañana</h3>
         <ul>
-          <li *ngFor="let meeting of meetings | afternoon">la {{ meeting.nombre }} dara inicio a la hora {{meeting.inicio}} </li> 
+          <li *ngFor="let meeting of meetings | morning">
+            la {{ meeting.nombre }} dara inicio a la hora {{ meeting.inicio }}
+          </li>
         </ul>
       </div>
+    </a>
+    <div class="col-md-6">
+      <h3>Tarde</h3>
+      <ul>
+        <li *ngFor="let meeting of meetings | afternoon">
+          la {{ meeting.nombre }} dara inicio a la hora {{ meeting.inicio }}
+        </li>
+      </ul>
     </div>
-  </div> -->
+  </div>
+</div> -->
