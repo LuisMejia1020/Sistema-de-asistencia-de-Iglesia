@@ -11,6 +11,7 @@ import { ListaUsuariosComponent } from './lista-usuarios/lista-usuarios.componen
 import { ReunionComponent } from './reunion/reunion.component';
 import { AccederSistemaUsuarioComponent } from './acceder-sistema-usuario/acceder-sistema-usuario.component';
 import { LoginAdministradorComponent } from './login-administrador/login-administrador.component';
+import { AppRoutingModule } from './app-routing.module';
 ;
 
 @NgModule({
@@ -27,10 +28,11 @@ import { LoginAdministradorComponent } from './login-administrador/login-adminis
     ReunionComponent,
     AccederSistemaUsuarioComponent,
     LoginAdministradorComponent,
+  
     
   ],
   imports: [
-    BrowserModule, FormsModule
+    BrowserModule, FormsModule, AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
