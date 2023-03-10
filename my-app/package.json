@@ -8,9 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "generateComponent": "ng generate component Actualizar-Usuario",
-    "generateService": "ng generate service user",
-    "generarModule":"ng generate module app-routing --flat --module=app"
-   
+    "generateService": "ng generate service mysql-service",
+    "generarModule": "ng generate module app-routing --flat --module=app"
   },
   "private": true,
   "dependencies": {
