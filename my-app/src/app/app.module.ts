@@ -12,6 +12,7 @@ import { ReunionComponent } from './reunion/reunion.component';
 import { AccederSistemaUsuarioComponent } from './acceder-sistema-usuario/acceder-sistema-usuario.component';
 import { LoginAdministradorComponent } from './login-administrador/login-administrador.component';
 import { AppRoutingModule } from './app-routing.module';
+
 ;
 
 @NgModule({
@@ -28,6 +29,7 @@ import { AppRoutingModule } from './app-routing.module';
     ReunionComponent,
     AccederSistemaUsuarioComponent,
     LoginAdministradorComponent,
+    
   
     
   ],
