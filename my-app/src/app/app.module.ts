@@ -12,6 +12,7 @@ import { ReunionComponent } from './reunion/reunion.component';
 import { AccederSistemaUsuarioComponent } from './acceder-sistema-usuario/acceder-sistema-usuario.component';
 import { LoginAdministradorComponent } from './login-administrador/login-administrador.component';
 import { AppRoutingModule } from './app-routing.module';
+import { PanelComponent } from './panel/panel.component';
 
 ;
 
@@ -29,6 +30,7 @@ import { AppRoutingModule } from './app-routing.module';
     ReunionComponent,
     AccederSistemaUsuarioComponent,
     LoginAdministradorComponent,
+    PanelComponent,
     
   
     
@@ -39,4 +41,5 @@ import { AppRoutingModule } from './app-routing.module';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
