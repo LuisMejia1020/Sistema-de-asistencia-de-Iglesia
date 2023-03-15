@@ -1,0 +1,90 @@
+.titulo-principal {
+  text-align: center;
+  color: #000;
+  font-size: 40px;
+}
+
+.texto-instructivo {
+  text-align: center;
+  color: #807e7e;
+}
+
+/* .fecha .conteo {
+  text-align: left;
+  color: #807e7e;
+}
+
+.contenido-reunion {
+  text-align: center;
+} */
+
+.contenido-reunion h2 {
+  color: #000;
+}
+
+.contenido-reunion span {
+  color: #b0afaf;
+  font-size: 20px;
+}
+
+.div-reunion {
+  padding: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f2f2f2;
+  color: rgba(128, 126, 126, 0.6);
+  border-radius: 10px;
+}
+
+.contenedor-botones {
+  overflow: hidden;
+}
+
+.boton-regresar {
+  text-align: left;
+  float: left;
+}
+
+.boton-regresar a {
+  text-decoration: none;
+  color: #000;
+}
+
+.boton-cerrar-sesion {
+  text-align: right;
+  float: right;
+}
+
+.boton-cerrar-sesion a {
+  text-decoration: none;
+  color: #000;
+}
+
+.contenedor-funcionalidades {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor-funcionalidades span {
+  font-size: 20 px;
+}
+
+.input-buscador {
+  text-align: center;
+  border: none;
+  border-radius: 15px 0 0 15px;
+  background-color: #d9d9d9;
+  text-align: center;
+}
+
+.lupa {
+  background-color: black;
+  color: white;
+  border-radius: 0 15px 15px 0;
+}
+
+label.nombre-usuario {
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}

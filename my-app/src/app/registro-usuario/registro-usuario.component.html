@@ -1,4 +1,185 @@
-<form>
+<div class="asistencia">
+  <br /><br />
+  <div class="container">
+    <div class="row align-items-center" style="height: 80vh">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+        <div class="card border-0">
+          <div>
+            <div class="contenedor-botones">
+              <div class="boton-regresar">
+                <a href="">Regresar</a>
+              </div>
+              <div class="boton-cerrar-sesion">
+                <a href="">Cerrar sesion</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="titulo-principal">Crear usuario</h3>
+              <!-- <div class="contenedor-funcionalidades">
+                <div class="fecha">
+                  <span>19 de marzo</span>
+                </div>
+                <div class="conteo">
+                  <span>10 / <b>120</b></span>
+                </div>
+                <div class="boton-añadir-usuario">
+                  <button
+                    class="btn btn-outline-light border-dark"
+                    style="color: black"
+                  >
+                    <i class="fa-solid fa-plus"></i
+                    ><i class="fa-solid fa-user"></i>
+                  </button>
+                </div>
+                <div class="boton-refrescar">
+                  <button
+                    class="btn btn-outline-light border-dark"
+                    style="color: black"
+                  >
+                    <i class="fa-solid fa-arrows-rotate"></i> Refrescar
+                  </button>
+                </div>
+              </div> -->
+              <div class="texto-instructivo">
+                <p>Cree un usuario completando los siguientes campos</p>
+              </div>
+              <!-- <div class="buscador">
+                <div class="input-group mt-2">
+                  <input
+                    type="text"
+                    class="form-control input-buscador"
+                    placeholder="Buscar..."
+                  />
+                  <div class="input-group-append">
+                    <button class="btn lupa" type="button">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </div> -->
+              <div class="mb-3 mt-3">
+                <label for="user" class="form-label" style="font-style: regular"
+                  >Primer nombre<b><sup style="color: red">*</sup></b></label
+                >
+                <input
+                  type="text"
+                  class="form-control border-0"
+                  id="user"
+                  placeholder="Ingrese el primer nombre"
+                  name="user"
+                  required
+                  style="
+                    background-color: #f2f2f2;
+                    color: rgba(128, 126, 126, 0.6);
+                    border-radius: 10px;
+                  "
+                />
+              </div>
+              <div class="mb-3">
+                <label
+                  for="segundoNombre"
+                  class="form-label"
+                  style="font-style: regular"
+                  >Segundo nombre<b><sup style="color: red">*</sup></b></label
+                >
+                <input
+                  type="text"
+                  class="form-control border-0"
+                  id="segundoNombre"
+                  placeholder="Ingrese el segundo nombre"
+                  name="segundoNombre"
+                  required
+                  style="
+                    background-color: #f2f2f2;
+                    color: rgba(128, 126, 126, 0.6);
+                    border-radius: 10px;
+                  "
+                />
+              </div>
+              <div class="mb-3">
+                <label
+                  for="primerApellido"
+                  class="form-label"
+                  style="font-style: regular"
+                  >Primer apellido<b><sup style="color: red">*</sup></b></label
+                >
+                <input
+                  type="text"
+                  class="form-control border-0"
+                  id="primerApellido"
+                  placeholder="Ingrese su contraseña"
+                  name="primerApellido"
+                  required
+                  style="
+                    background-color: #f2f2f2;
+                    color: rgba(128, 126, 126, 0.6);
+                    border-radius: 10px;
+                  "
+                />
+              </div>
+              <div class="mb-3">
+                <label
+                  for="segundoApellido"
+                  class="form-label"
+                  style="font-style: regular"
+                  >Segundo apellido
+                  <b><sup style="color: red">*</sup></b></label
+                >
+                <input
+                  type="text"
+                  class="form-control border-0"
+                  id="segundoApellido"
+                  placeholder="Ingrese su segundo apellido"
+                  name="segundoApellido"
+                  required
+                  style="
+                    background-color: #f2f2f2;
+                    color: rgba(128, 126, 126, 0.6);
+                    border-radius: 10px;
+                  "
+                />
+              </div>
+              <!-- <div class="mb-3">
+                <label
+                  for="familia"
+                  class="form-label"
+                  style="font-style: regular"
+                  >Familia <b><sup style="color: red">*</sup></b></label
+                >
+                <select class="form-select" id="familia" name="familia">
+                  <option>Familia 1</option>
+                  <option>Familia 2</option>
+                  <option>Familia 3</option>
+                  <option>Familia 4</option>
+                </select>
+              </div> -->
+              <div class="d-grid">
+                <!-- <button type="submit" class="btn btn-primary btn-block">
+                  Iniciar Sesion
+                </button> -->
+                <button
+                  type="submit"
+                  class="btn btn-block"
+                  style="
+                    background-color: black;
+                    color: white;
+                    border-radius: 15px;
+                  "
+                >
+                  Crear
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+  </div>
+  <br /><br />
+</div>
+<!-- <form>
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB3nS396Ie2YRgkAbLob612mCJ3OLTEpOkhg&usqp=CAU" alt="">
   <label>Hola, por favor registre sus datos</label>
     <label>
@@ -32,4 +213,4 @@
     </label>
   
     <button (click)="registrarse('Jani','Graciela','flores', 'Lama', 'janflores', 'janis@gmail.com', 'royale')">Registrarse</button>
-  </form>
+  </form> -->
