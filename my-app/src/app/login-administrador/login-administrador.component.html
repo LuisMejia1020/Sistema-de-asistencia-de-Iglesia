@@ -11,6 +11,10 @@
       Contraseña:
       <input type="password" name="password" ngModel required>
     </label>
-  
-    <button (click)="iniciarSesion('janiflores@gmail.com', 'royale')">Iniciar sesión</button>
+    
+    <a class="white py-3" routerLink="/sextapantalla"
+    routerLinkActive="active" ariaCurrentWhenActive="page">
+      <button (click)="iniciarSesion('janiflores@gmail.com', 'royale')">Iniciar sesión</button>
+    </a>
+    
   </form>

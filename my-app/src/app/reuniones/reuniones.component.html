@@ -18,7 +18,15 @@
                 <div class="card border-0 div-reunion">
                   <div class="contenido-reunion">
                     <h2>Mañana</h2>
-                    <span>70 de 120 asistentes</span>
+                    <a class="white py-3" routerLink="/cuartapantalla"
+                    routerLinkActive="active" ariaCurrentWhenActive="page">
+                      <ul>
+                        <li *ngFor="let meeting of meetings | morning">
+                          la {{ meeting.nombre }} dara inicio a la hora {{ meeting.inicio }}
+                        </li>
+                      </ul>
+                      <span>70 de 120 asistentes</span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -26,7 +34,15 @@
                 <div class="card border-0 div-reunion">
                   <div class="contenido-reunion">
                     <h2>Tarde</h2>
-                    <span>0 de 120 asistentes</span>
+                    <a class="white py-3" routerLink="/octavapantalla"
+                    routerLinkActive="active" ariaCurrentWhenActive="page">
+                      <ul>
+                        <li *ngFor="let meeting of meetings | afternoon">
+                          la {{ meeting.nombre }} dara inicio a la hora {{ meeting.inicio }}
+                        </li>
+                      </ul>
+                      <span>0 de 120 asistentes</span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -51,37 +67,7 @@
 </ul> -->
 
 <!-- Formulario para crear o actualizar usuarios -->
-<!-- <form #usuarioForm="ngForm" (ngSubmit)="guardarReunion()">
-  <input type="hidden" name="id" [(ngModel)]="reunionSeleccionado.id" />
-  <div>
-    <label for="nombre">Nombre:</label>
-    <input
-      type="text"
-      name="nombre"
-      [(ngModel)]="reunionSeleccionado.nombre"
-      required
-    />
-  </div>
-  <div>
-    <label for="lider">Lider:</label>
-    <input
-      type="text"
-      name="lider"
-      [(ngModel)]="reunionSeleccionado.lider"
-      required
-    />
-  </div>
-  <div>
-    <label for="hora">Hora:</label>
-    <input
-      type="time"
-      name="inicio"
-      [(ngModel)]="reunionSeleccionado.inicio"
-      required
-    />
-  </div>
-  <button type="submit">{{ modoEdicion ? "Actualizar" : "Crear" }}</button>
-</form> -->
+
 
 <!-- <div class="container">
   <h2>Reuniones</h2>

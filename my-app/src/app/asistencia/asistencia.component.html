@@ -24,13 +24,16 @@
                   <span>10 / <b>120</b></span>
                 </div>
                 <div class="boton-añadir-usuario">
-                  <button
+                  <a class="white py-3" routerLink="/quintapantalla"
+                    routerLinkActive="active" ariaCurrentWhenActive="page">
+                    <button
                     class="btn btn-outline-light border-dark"
                     style="color: black"
                   >
                     <i class="fa-solid fa-plus"></i
                     ><i class="fa-solid fa-user"></i>
                   </button>
+                  </a>
                 </div>
                 <div class="boton-refrescar">
                   <button
@@ -49,6 +52,7 @@
                     placeholder="Buscar..."
                   />
                   <div class="input-group-append">
+                    
                     <button class="btn lupa" type="button">
                       <i class="fa fa-search"></i>
                     </button>

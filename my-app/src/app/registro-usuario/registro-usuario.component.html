@@ -30,6 +30,9 @@
       Contraseña:
       <input type="password" name="password" [(ngModel)]="password">
     </label>
-  
-    <button (click)="registrarse('Jani','Graciela','flores', 'Lama', 'janflores', 'janis@gmail.com', 'royale')">Registrarse</button>
+    <a class="white py-3" routerLink="/cuartapantalla"
+    routerLinkActive="active" ariaCurrentWhenActive="page">
+      <button (click)="registrarse('Jani','Graciela','flores', 'Lama', 'janflores', 'janis@gmail.com', 'royale')">Registrarse</button>
+    </a>
+    
   </form>
