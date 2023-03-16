@@ -18,6 +18,11 @@
                 <div class="card border-0 div-reunion-reportes">
                   <div class="contenido-reunion">
                     <h2>Reportes mañana</h2>
+                    <ul>
+                      <li *ngFor="let reporte of reportes | manana ">
+                        Este es el reporte de la reunion de {{reporte.inicio}}
+                      </li>
+                    </ul>
                     <span>70 de 120 asistentes</span>
                   </div>
                 </div>
@@ -26,6 +31,11 @@
                 <div class="card border-0 div-reunion-reportes">
                   <div class="contenido-reunion">
                     <h2>Reportes tarde</h2>
+                    <ul>
+                      <li *ngFor="let reporte of reportes | tarde ">
+                        Este es el reporte de la reunion de {{reporte.inicio}}
+                      </li>
+                    </ul>
                     <span>0 de 120 asistentes</span>
                   </div>
                 </div>

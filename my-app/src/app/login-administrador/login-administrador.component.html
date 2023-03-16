@@ -60,20 +60,21 @@
                 />
               </div>
               <div class="d-grid">
-                <!-- <button type="submit" class="btn btn-primary btn-block">
-                  Iniciar Sesion
-                </button> -->
+              <a class="white py-3" routerLink="/sextapantalla"
+              routerLinkActive="active" ariaCurrentWhenActive="page">
                 <button
-                  type="submit"
-                  class="btn btn-block"
-                  style="
-                    background-color: #22296a;
-                    color: white;
-                    border-radius: 15px;
-                  "
-                >
-                  Iniciar Sesion
-                </button>
+                type="submit"
+                class="btn btn-block"
+                style="
+                  background-color: #22296a;
+                  color: white;
+                  border-radius: 15px;
+                "
+                (click)="iniciarSesion('janiflores@gmail.com', 'royale')"
+              >
+                Iniciar Sesion
+              </button>
+              </a>
               </div>
             </form>
           </div>
@@ -85,29 +86,8 @@
   <br /><br />
 </div>
 
-<!-- <p>login-administrador works!</p>
-<form>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB3nS396Ie2YRgkAbLob612mCJ3OLTEpOkhg&usqp=CAU" alt="">
-    <label>Hola Administrador, por favor ingrese sus datos</label>
-    <label>
-      Correo electrónico:
-      <input type="email" name="email" ngModel required>
-    </label>
+
   
-    <label>
-      Contraseña:
-      <input type="password" name="password" ngModel required>
-    </label>
-<<<<<<< HEAD
     
-    <a class="white py-3" routerLink="/sextapantalla"
-    routerLinkActive="active" ariaCurrentWhenActive="page">
-      <button (click)="iniciarSesion('janiflores@gmail.com', 'royale')">Iniciar sesión</button>
-    </a>
-    
-  </form>
-=======
-  
-    <button (click)="iniciarSesion('janiflores@gmail.com', 'royale')">Iniciar sesión</button>
-  </form> -->
->>>>>>> 059ae37c37f2c451086d4c5fb7c4f6e08c313a27
+
+

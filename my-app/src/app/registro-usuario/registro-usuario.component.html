@@ -15,7 +15,7 @@
               </div>
             </div>
             <div class="card-body">
-              <h3 class="titulo-principal">Crear usuario</h3>
+              <h3 class="titulo-principal">Crear persona</h3>
               <!-- <div class="contenedor-funcionalidades">
                 <div class="fecha">
                   <span>19 de marzo</span>
@@ -42,7 +42,7 @@
                 </div>
               </div> -->
               <div class="texto-instructivo">
-                <p>Cree un usuario completando los siguientes campos</p>
+                <p>Cree una nueva persona completando los siguientes campos</p>
               </div>
               <!-- <div class="buscador">
                 <div class="input-group mt-2">
@@ -77,6 +77,7 @@
                     color: rgba(128, 126, 126, 0.6);
                     border-radius: 10px;
                   "
+                  [(ngModel)]="primerNombre"
                 />
               </div>
               <div class="mb-3">
@@ -84,6 +85,7 @@
                   for="segundoNombre"
                   class="form-label"
                   style="font-style: regular"
+                  [(ngModel)]="segundoNombre"
                   >Segundo nombre<b><sup style="color: red">*</sup></b></label
                 >
                 <input
@@ -98,6 +100,7 @@
                     color: rgba(128, 126, 126, 0.6);
                     border-radius: 10px;
                   "
+                  [(ngModel)]="segundoNombre"
                 />
               </div>
               <div class="mb-3">
@@ -119,6 +122,7 @@
                     color: rgba(128, 126, 126, 0.6);
                     border-radius: 10px;
                   "
+                  [(ngModel)]="primerApellido"
                 />
               </div>
               <div class="mb-3">
@@ -141,6 +145,7 @@
                     color: rgba(128, 126, 126, 0.6);
                     border-radius: 10px;
                   "
+                  [(ngModel)]="segundoApellido"
                 />
               </div>
               <!-- <div class="mb-3">
@@ -169,6 +174,7 @@
                     color: white;
                     border-radius: 15px;
                   "
+                  (click)="registrarse('Jani','Graciela','flores', 'Lama', 'janflores', 'janis@gmail.com', 'royale')"
                 >
                   Crear
                 </button>
@@ -182,38 +188,3 @@
   </div>
   <br /><br />
 </div>
-<!-- <form>
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB3nS396Ie2YRgkAbLob612mCJ3OLTEpOkhg&usqp=CAU" alt="">
-  <label>Hola, por favor registre sus datos</label>
-    <label>
-      primer Nombre:
-      <input type="text" name="primerNombre" [(ngModel)]="primerNombre">
-    </label>
-
-    <label>
-        segundo Nombre:
-        <input type="text" name="segundoNombre" [(ngModel)]="segundoNombre">
-      </label>
-
-      <label>
-        primer apellido:
-        <input type="text" name="primerApellido" [(ngModel)]="primerApellido">
-      </label>
-
-      <label>
-        segundo apellido:
-        <input type="text" name="segundoApellido" [(ngModel)]="segundoApellido">
-      </label>
-  
-    <label>
-      Correo electrónico:
-      <input type="email" name="email" [(ngModel)]="email">
-    </label>
-  
-    <label>
-      Contraseña:
-      <input type="password" name="password" [(ngModel)]="password">
-    </label>
-  
-    <button (click)="registrarse('Jani','Graciela','flores', 'Lama', 'janflores', 'janis@gmail.com', 'royale')">Registrarse</button>
-  </form>
