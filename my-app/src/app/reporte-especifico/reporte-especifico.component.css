@@ -1,25 +1,19 @@
 .titulo-principal {
   text-align: center;
-  color: #000;
+  color: #22296a;
   font-size: 40px;
 }
 
-.texto-instructivo {
-  text-align: center;
-  color: #807e7e;
-}
-
-/* .fecha .conteo {
+.fecha .conteo {
   text-align: left;
   color: #807e7e;
 }
 
 .contenido-reunion {
   text-align: center;
-} */
-
+}
 .contenido-reunion h2 {
-  color: #000;
+  color: #22296a;
 }
 
 .contenido-reunion span {
@@ -47,7 +41,7 @@
 
 .boton-regresar a {
   text-decoration: none;
-  color: #000;
+  color: #22296a;
 }
 
 .boton-cerrar-sesion {
@@ -57,7 +51,7 @@
 
 .boton-cerrar-sesion a {
   text-decoration: none;
-  color: #000;
+  color: #22296a;
 }
 
 .contenedor-funcionalidades {
@@ -78,13 +72,13 @@
   text-align: center;
 }
 
-.lupa {
-  background-color: black;
-  color: white;
-  border-radius: 0 15px 15px 0;
-}
 
 label.nombre-usuario {
   font-size: 18px;
   letter-spacing: 1.5px;
+  color: #22296a;
+}
+
+.subtitulo{
+  color: #22296a;
 }

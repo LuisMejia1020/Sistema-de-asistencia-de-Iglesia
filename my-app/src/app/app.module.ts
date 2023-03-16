@@ -12,7 +12,12 @@ import { ReunionComponent } from './reunion/reunion.component';
 import { AccederSistemaUsuarioComponent } from './acceder-sistema-usuario/acceder-sistema-usuario.component';
 import { LoginAdministradorComponent } from './login-administrador/login-administrador.component';
 import { AppRoutingModule } from './app-routing.module';
+<<<<<<< HEAD
 import { AdminReunionCrudComponent } from './admin-reunion-crud/admin-reunion-crud.component';
+=======
+import { PanelComponent } from './panel/panel.component';
+import { ReporteEspecificoComponent } from './reporte-especifico/reporte-especifico.component';
+>>>>>>> 059ae37c37f2c451086d4c5fb7c4f6e08c313a27
 
 ;
 
@@ -30,7 +35,12 @@ import { AdminReunionCrudComponent } from './admin-reunion-crud/admin-reunion-cr
     ReunionComponent,
     AccederSistemaUsuarioComponent,
     LoginAdministradorComponent,
+<<<<<<< HEAD
     AdminReunionCrudComponent,
+=======
+    PanelComponent,
+    ReporteEspecificoComponent,
+>>>>>>> 059ae37c37f2c451086d4c5fb7c4f6e08c313a27
     
   
     
@@ -41,4 +51,5 @@ import { AdminReunionCrudComponent } from './admin-reunion-crud/admin-reunion-cr
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

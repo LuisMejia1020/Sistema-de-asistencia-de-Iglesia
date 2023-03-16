@@ -1,4 +1,91 @@
-<p>login-administrador works!</p>
+<div class="login-usuario">
+  <br /><br />
+  <div class="container">
+    <div class="row align-items-center" style="height: 80vh">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+        <div class="card border-0">
+          <div class="card-body">
+            <form action="/action_page.php">
+              <div id="logo" class="text-center">
+                <img
+                  src="../../assets/img/IPresGS azul.png"
+                  class="img-fluid mx-auto"
+                  width="40%"
+                  alt=""
+                  style="margin-bottom: 15px"
+                />
+              </div>
+              <h3 class="titulo-principal">Asistencia | IPresGS</h3>
+              <div class="mb-3 mt-3">
+                <label
+                  for="usuarioAdmind"
+                  class="form-label label-admind"
+                  style="font-style: regular"
+                  >Usuario administrador</label
+                >
+                <input
+                  type="text"
+                  class="form-control border-0"
+                  id="usuarioAdmind"
+                  placeholder="Ingrese el usuario administrador"
+                  name="usuarioAdmind"
+                  required
+                  style="
+                    background-color: #f2f2f2;
+                    color: rgba(128, 126, 126, 0.6);
+                    border-radius: 10px;
+                  "
+                />
+              </div>
+              <div class="mb-3">
+                <label
+                  for="contraAdmind"
+                  class="form-label label-admind"
+                  style="font-style: regular"
+                  >Contraseña</label
+                >
+                <input
+                  type="password"
+                  class="form-control border-0"
+                  id="contraAdmind"
+                  placeholder="Ingrese la contraseña"
+                  name="contraAdmind"
+                  required
+                  style="
+                    background-color: #f2f2f2;
+                    color: rgba(128, 126, 126, 0.6);
+                    border-radius: 10px;
+                  "
+                />
+              </div>
+              <div class="d-grid">
+                <!-- <button type="submit" class="btn btn-primary btn-block">
+                  Iniciar Sesion
+                </button> -->
+                <button
+                  type="submit"
+                  class="btn btn-block"
+                  style="
+                    background-color: #22296a;
+                    color: white;
+                    border-radius: 15px;
+                  "
+                >
+                  Iniciar Sesion
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+  </div>
+  <br /><br />
+</div>
+
+<!-- <p>login-administrador works!</p>
 <form>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB3nS396Ie2YRgkAbLob612mCJ3OLTEpOkhg&usqp=CAU" alt="">
     <label>Hola Administrador, por favor ingrese sus datos</label>
@@ -11,6 +98,7 @@
       Contraseña:
       <input type="password" name="password" ngModel required>
     </label>
+<<<<<<< HEAD
     
     <a class="white py-3" routerLink="/sextapantalla"
     routerLinkActive="active" ariaCurrentWhenActive="page">
@@ -18,3 +106,8 @@
     </a>
     
   </form>
+=======
+  
+    <button (click)="iniciarSesion('janiflores@gmail.com', 'royale')">Iniciar sesión</button>
+  </form> -->
+>>>>>>> 059ae37c37f2c451086d4c5fb7c4f6e08c313a27
