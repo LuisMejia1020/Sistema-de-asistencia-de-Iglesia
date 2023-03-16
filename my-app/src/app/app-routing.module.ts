@@ -8,6 +8,8 @@ import { ReunionesComponent } from './reuniones/reuniones.component';
 import { AsistenciaComponent } from './asistencia/asistencia.component';
 import { RegistroUsuarioComponent } from './registro-usuario/registro-usuario.component';
 import { AdminUserCrudComponent } from './admin-user-crud/admin-user-crud.component';
+import { PanelComponent } from './panel/panel.component';
+import { AdminReunionCrudComponent } from './admin-reunion-crud/admin-reunion-crud.component';
 
 const routes: Routes = [
   {path: 'inicio', component: AccederSistemaUsuarioComponent,},
@@ -16,9 +18,11 @@ const routes: Routes = [
   {path: 'tercerapantalla', component: ReunionesComponent,},
   {path: 'cuartapantalla', component: AsistenciaComponent,},
   {path: 'quintapantalla', component: RegistroUsuarioComponent,},
-  {path: 'sextapantalla', component: AdminUserCrudComponent,},
+  {path: 'sextapantalla', component: PanelComponent,},
   {path: 'septimapantalla', component: AsistenciaComponent,},
   {path: 'octavapantalla', component: AsistenciaComponent,},
+  {path: 'novenapantalla', component: AdminUserCrudComponent,},
+  {path: 'decimapantalla', component: AdminReunionCrudComponent,},
 ];
 
 

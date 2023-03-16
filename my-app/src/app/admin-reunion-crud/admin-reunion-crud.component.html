@@ -1,34 +1,42 @@
-<p>admin-reunion-crud works!</p>
-<form #usuarioForm="ngForm" (ngSubmit)="guardarReunion()">
-    <input type="hidden" name="id" [(ngModel)]="reunionSeleccionado.id" />
-    <div>
-      <label for="nombre">Nombre:</label>
-      <input
-        type="text"
-        name="nombre"
-        [(ngModel)]="reunionSeleccionado.nombre"
-        required
-      />
-    </div>
-    <div>
-      <label for="lider">Lider:</label>
-      <input
-        type="text"
-        name="lider"
-        [(ngModel)]="reunionSeleccionado.lider"
-        required
-      />
-    </div>
-    <div>
-      <label for="hora">Hora:</label>
-      <input
-        type="time"
-        name="inicio"
-        [(ngModel)]="reunionSeleccionado.inicio"
-        required
-      />
-    </div>
-    <button type="submit">{{ modoEdicion ? "Actualizar" : "Crear" }}</button>
-  </form> 
 
- 
+<!-- Mostrar la lista de reuniones-->
+<ul>
+  <li *ngFor="let meeting of meetings">
+    {{ meeting.nombre }} ({{ meeting.lider }})
+    <button (click)="editarReunion(meeting)">Editar</button>
+    <button (click)="borrarReunion(meeting)">Borrar</button>
+  </li>
+</ul> 
+
+
+<form #usuarioForm="ngForm" (ngSubmit)="guardarReunion()">
+  <input type="hidden" name="id" [(ngModel)]="reunionSeleccionado.id" />
+  <div>
+    <label for="nombre">Nombre:</label>
+    <input
+      type="text"
+      name="nombre"
+      [(ngModel)]="reunionSeleccionado.nombre"
+      required
+    />
+  </div>
+  <div>
+    <label for="lider">Lider:</label>
+    <input
+      type="text"
+      name="lider"
+      [(ngModel)]="reunionSeleccionado.lider"
+      required
+    />
+  </div>
+  <div>
+    <label for="hora">Hora:</label>
+    <input
+      type="time"
+      name="inicio"
+      [(ngModel)]="reunionSeleccionado.inicio"
+      required
+    />
+  </div>
+  <button type="submit">{{ modoEdicion ? "Actualizar" : "Crear" }}</button>
+</form> 
