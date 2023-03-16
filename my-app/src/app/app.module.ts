@@ -13,6 +13,7 @@ import { AccederSistemaUsuarioComponent } from './acceder-sistema-usuario/accede
 import { LoginAdministradorComponent } from './login-administrador/login-administrador.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PanelComponent } from './panel/panel.component';
+import { ReporteEspecificoComponent } from './reporte-especifico/reporte-especifico.component';
 
 ;
 
@@ -31,6 +32,7 @@ import { PanelComponent } from './panel/panel.component';
     AccederSistemaUsuarioComponent,
     LoginAdministradorComponent,
     PanelComponent,
+    ReporteEspecificoComponent,
     
   
     
