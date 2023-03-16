@@ -14,7 +14,7 @@ import { LoginAdministradorComponent } from './login-administrador/login-adminis
 import { AppRoutingModule } from './app-routing.module';
 import { AdminReunionCrudComponent } from './admin-reunion-crud/admin-reunion-crud.component';
 import {  PanelComponent, MananaPipe, TardePipe } from './panel/panel.component';
-import { ReporteEspecificoComponent } from './reporte-especifico/reporte-especifico.component';
+import { ReporteEspecificoComponent, FaltantePipe, NuevaPipe } from './reporte-especifico/reporte-especifico.component';
 
 
 ;
@@ -37,7 +37,9 @@ import { ReporteEspecificoComponent } from './reporte-especifico/reporte-especif
     PanelComponent,
     ReporteEspecificoComponent,
     MananaPipe,
-    TardePipe
+    TardePipe,
+    FaltantePipe,
+    NuevaPipe
    
 
   ],

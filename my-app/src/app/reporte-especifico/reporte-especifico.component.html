@@ -20,110 +20,16 @@
                 <h5 class="subtitulo">Personas Faltantes</h5>
                 <div class="overflow-auto" style="height: 175px">
                   <ul class="list-group">
-                    <li class="list-group-item">
-                      <label
-                        class="form-check-label nombre-usuario"
-                        for="check1"
-                        >Ana Maria Gonzales Zepeda</label
-                      >
-                    </li>
-                    <li class="list-group-item">
-                      <label
-                        class="form-check-label nombre-usuario"
-                        for="check1"
-                        >Ana Maria Gonzales Zepeda</label
-                      >
-                    </li>
-                    <li class="list-group-item">
-                      <label
-                        class="form-check-label nombre-usuario"
-                        for="check1"
-                        >Ana Maria Gonzales Zepeda</label
-                      >
-                    </li>
-                    <li class="list-group-item">
-                      <label
-                        class="form-check-label nombre-usuario"
-                        for="check1"
-                        >Ana Maria Gonzales Zepeda</label
-                      >
-                    </li>
-                    <li class="list-group-item">
-                      <label
-                        class="form-check-label nombre-usuario"
-                        for="check1"
-                        >Ana Maria Gonzales Zepeda</label
-                      >
-                    </li>
-                    <li class="list-group-item">
-                      <label
-                        class="form-check-label nombre-usuario"
-                        for="check1"
-                        >Ana Maria Gonzales Zepeda</label
-                      >
-                    </li>
+                    <li class="list-group-item" *ngFor="let reporte of reportes | faltante">
+                      {{reporte.nombre}} 
                   </ul>
                 </div>
                 <br />
                 <h5 class="subtitulo">Personas Nuevas</h5>
                 <div class="overflow-auto" style="height: 175px">
                   <ul class="list-group">
-                    <li class="list-group-item">
-                      <label
-                        class="form-check-label nombre-usuario"
-                        for="check1"
-                        >Ana Maria Gonzales Zepeda</label
-                      >
-                    </li>
-                    <li class="list-group-item">
-                      <label
-                        class="form-check-label nombre-usuario"
-                        for="check1"
-                        >Ana Maria Gonzales Zepeda</label
-                      >
-                    </li>
-                    <li class="list-group-item">
-                      <label
-                        class="form-check-label nombre-usuario"
-                        for="check1"
-                        >Ana Maria Gonzales Zepeda</label
-                      >
-                    </li>
-                    <li class="list-group-item">
-                      <label
-                        class="form-check-label nombre-usuario"
-                        for="check1"
-                        >Ana Maria Gonzales Zepeda</label
-                      >
-                    </li>
-                    <li class="list-group-item">
-                      <label
-                        class="form-check-label nombre-usuario"
-                        for="check1"
-                        >Ana Maria Gonzales Zepeda</label
-                      >
-                    </li>
-                    <li class="list-group-item">
-                      <label
-                        class="form-check-label nombre-usuario"
-                        for="check1"
-                        >Ana Maria Gonzales Zepeda</label
-                      >
-                    </li>
-                    <li class="list-group-item">
-                      <label
-                        class="form-check-label nombre-usuario"
-                        for="check1"
-                        >Ana Maria Gonzales Zepeda</label
-                      >
-                    </li>
-                    <li class="list-group-item">
-                      <label
-                        class="form-check-label nombre-usuario"
-                        for="check1"
-                        >Ana Maria Gonzales Zepeda</label
-                      >
-                    </li>
+                    <li class="list-group-item" *ngFor="let reporte of reportes | nueva">
+                      {{reporte.nombre}} 
                   </ul>
                 </div>
               </div>

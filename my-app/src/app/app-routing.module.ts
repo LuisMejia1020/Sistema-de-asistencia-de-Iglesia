@@ -10,6 +10,7 @@ import { RegistroUsuarioComponent } from './registro-usuario/registro-usuario.co
 import { AdminUserCrudComponent } from './admin-user-crud/admin-user-crud.component';
 import { PanelComponent } from './panel/panel.component';
 import { AdminReunionCrudComponent } from './admin-reunion-crud/admin-reunion-crud.component';
+import { ReporteEspecificoComponent } from './reporte-especifico/reporte-especifico.component';
 
 const routes: Routes = [
   {path: 'inicio', component: AccederSistemaUsuarioComponent,},
@@ -23,6 +24,9 @@ const routes: Routes = [
   {path: 'octavapantalla', component: AsistenciaComponent,},
   {path: 'novenapantalla', component: AdminUserCrudComponent,},
   {path: 'decimapantalla', component: AdminReunionCrudComponent,},
+  {path: 'oncepantalla', component: ReporteEspecificoComponent,},
+  {path: 'docepantalla', component: ReporteEspecificoComponent,},
+  {path: 'trecepantalla', component: AsistenciaComponent,},
 ];
 
 
