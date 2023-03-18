@@ -12,6 +12,7 @@ import { PanelComponent } from './panel/panel.component';
 import { AdminReunionCrudComponent } from './admin-reunion-crud/admin-reunion-crud.component';
 import { ReporteEspecificoComponent } from './reporte-especifico/reporte-especifico.component';
 
+
 const routes: Routes = [
   {path: 'inicio', component: AccederSistemaUsuarioComponent,},
   {path: 'primerapantalla', component: LoginAdministradorComponent,},

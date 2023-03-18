@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "nuevaAplicacion": "ng new my-app",
     "babel-node":"babel-node --presets=@babel/preset-env",
-    "dev":"nodemon --exec npm run babel-node src/index.js"
+    "dev":"nodemon --exec npm run babel-node src/index.js",
+    "div":"nodemon --exec npm run app.js"
+
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { ILogin } from '../interfaces/interface';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-login-administrador',
@@ -7,6 +10,9 @@ import { ILogin } from '../interfaces/interface';
   styleUrls: ['./login-administrador.component.css']
 })
 export class LoginAdministradorComponent {
+
+ 
+  
   email: ILogin[] = [];
   password: ILogin[] = [];
 
