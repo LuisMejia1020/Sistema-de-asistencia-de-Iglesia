@@ -11,7 +11,8 @@
     "generateService": "ng generate service api",
     "generarModule": "ng generate module app-routing --flat --module=app",
     "babel-node": "babel-node --presets=@babel/preset-env",
-    "dev": "nodemon --exec npm run babel-node src/app.js",
+    "dev": "nodemon --exec npm run babel-node src/database.js",
+    "dev2": "nodemon --exec npm run babel-node src/app.js",
     "nuevo": "ng add @angular/material",
     "div":"node app.js"
   },
