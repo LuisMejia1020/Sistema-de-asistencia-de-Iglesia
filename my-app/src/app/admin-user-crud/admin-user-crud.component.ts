@@ -51,4 +51,9 @@ export class AdminUserCrudComponent {
       this.usuarios = this.usuarios.filter(u => u.id !== usuario.id);
     }
   }
+
+  clearSession(){
+    console.log("Hasta luego te esperamos pronto")
+    alert("tu sesion ha terminado")
+  }
 }

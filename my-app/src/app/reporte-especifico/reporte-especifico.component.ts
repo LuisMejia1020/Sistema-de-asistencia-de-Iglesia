@@ -53,6 +53,12 @@ export class ReporteEspecificoComponent {
    {nombre: 'Karla Castro', type:'faltante'},
 
   ]
+
+  clearSession(){
+    console.log("Hasta luego te esperamos pronto")
+    alert("tu sesion ha terminado")
+  }
+
   
 
 }

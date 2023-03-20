@@ -30,4 +30,9 @@ export class RegistroUsuarioComponent {
     console.log(`la persona ${this.primerNombre} ${this.segundoNombre} ${this.primerApellido} ${this.segundoApellido } esta registrando su usuario ${this.username} con correo ${this.email} y contraseña ${this.password}`);
     alert("usuario registrado")
   }
+
+  clearSession(){
+    console.log("Hasta luego te esperamos pronto")
+    alert("tu sesion ha terminado")
+  }
 }

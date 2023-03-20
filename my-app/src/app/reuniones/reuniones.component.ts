@@ -52,4 +52,9 @@ export class ReunionesComponent {
     
   ];
 
+  clearSession(){
+    console.log("Hasta luego te esperamos pronto")
+    alert("tu sesion ha terminado")
+  }
+
 }

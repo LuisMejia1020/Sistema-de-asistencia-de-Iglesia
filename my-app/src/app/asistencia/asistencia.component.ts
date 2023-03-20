@@ -22,4 +22,9 @@ export class AsistenciaComponent {
     { nombre: 'Francisco', asistio: false },
     { nombre: 'Carlos', asistio: false },
   ];
+
+  clearSession(){
+    console.log("Hasta luego te esperamos pronto")
+    alert("tu sesion ha terminado")
+  }
 }
