@@ -38,21 +38,19 @@
                       *ngFor="let usuario of usuarios"
                     >
                       {{ usuario.nombre }} ({{ usuario.email }})
-                      <div class="float-left">
-                        <button
-                          style="margin-right: 15px"
-                          class="btn btn-success mr-2"
-                          (click)="editarUsuario(usuario)"
-                        >
-                          Editar
-                        </button>
-                        <button
-                          class="btn btn-danger float-left"
-                          (click)="borrarUsuario(usuario)"
-                        >
-                          Borrar
-                        </button>
-                      </div>
+                      <button
+                        class="btn btn-success float-right"
+                        (click)="editarUsuario(usuario)"
+                      >
+                        Editar
+                      </button>
+                      <button
+                      
+                        class="btn btn-danger"
+                        (click)="borrarUsuario(usuario)"
+                      >
+                        Borrar
+                      </button>
                     </li>
                   </ul>
                   <br />
@@ -85,7 +83,7 @@
                     <br />
                     <button
                       type="submit"
-                      class="btn btn-primary btn-lg btn-block"
+                      class="btn btn-primary btn-block border-0"
                       style="background-color: #22296a"
                     >
                       {{ modoEdicion ? "Actualizar usuario" : "Crear Usuario" }}
