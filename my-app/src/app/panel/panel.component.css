@@ -18,12 +18,12 @@
 
 .contenido-reunion span {
   color: #b0afaf;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .div-reunion-reportes {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 28px;
+  padding-bottom: 28px;
   background-color: #f2f2f2;
   /* color: rgba(128, 126, 126, 0.6); */
   border-radius: 10px;

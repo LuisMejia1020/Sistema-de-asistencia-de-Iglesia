@@ -11,8 +11,14 @@
                 <a href="" (click)="goBack()">Regresar</a>
               </div>
               <div class="boton-cerrar-sesion">
-                <a class="white py-3" routerLink="/catorcepantalla"
-                routerLinkActive="active" ariaCurrentWhenActive="page" (click)="clearSession()">Cerrar sesion</a>
+                <a
+                  class="white py-3"
+                  routerLink="/catorcepantalla"
+                  routerLinkActive="active"
+                  ariaCurrentWhenActive="page"
+                  (click)="clearSession()"
+                  >Cerrar sesion</a
+                >
               </div>
             </div>
             <div class="card-body">
@@ -167,21 +173,32 @@
                 <!-- <button type="submit" class="btn btn-primary btn-block">
                   Iniciar Sesion
                 </button> -->
-                <a class="white py-3" routerLink="/trecepantalla"
-                routerLinkActive="active" ariaCurrentWhenActive="page">
+                
                   <button
-                  type="submit"
-                  class="btn btn-block"
-                  style="
-                    background-color: black;
-                    color: white;
-                    border-radius: 15px;
-                  "
-                  (click)="registrarse('Jani','Graciela','flores', 'Lama', 'janflores', 'janis@gmail.com', 'royale')"
-                >
-                  Crear
-                </button>
-                </a>
+                    type="submit"
+                    class="btn btn-block"
+                    style="
+                      background-color: black;
+                      color: white;
+                      border-radius: 15px;
+                    "
+                    routerLink="/trecepantalla"
+                    routerLinkActive="active"
+                    ariaCurrentWhenActive="page"
+                    (click)="
+                      registrarse(
+                        'Jani',
+                        'Graciela',
+                        'flores',
+                        'Lama',
+                        'janflores',
+                        'janis@gmail.com',
+                        'royale'
+                      )
+                    "
+                  >
+                    Crear
+                  </button>
               </div>
             </div>
           </div>
