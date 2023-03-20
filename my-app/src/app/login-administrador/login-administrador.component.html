@@ -36,7 +36,7 @@
                     color: rgba(128, 126, 126, 0.6);
                     border-radius: 10px;
                   "
-                 [(ngModel)]="email"
+                  [(ngModel)]="email"
                 />
               </div>
               <div class="mb-3">
@@ -62,21 +62,21 @@
                 />
               </div>
               <div class="d-grid">
-              <a class="white py-3" routerLink="/sextapantalla"
-              routerLinkActive="active" ariaCurrentWhenActive="page">
                 <button
-                type="submit"
-                class="btn btn-block"
-                style="
-                  background-color: #22296a;
-                  color: white;
-                  border-radius: 15px;
-                "
-                (click)="iniciarSesion('janiflores@gmail.com', 'royale')"
-              >
-                Iniciar Sesion
-              </button>
-              </a>
+                  type="submit"
+                  class="btn btn-block"
+                  style="
+                    background-color: #22296a;
+                    color: white;
+                    border-radius: 15px;
+                  "
+                  routerLink="/sextapantalla"
+                  routerLinkActive="active"
+                  ariaCurrentWhenActive="page"
+                  (click)="iniciarSesion('janiflores@gmail.com', 'royale')"
+                >
+                  Iniciar Sesion
+                </button>
               </div>
             </form>
           </div>
@@ -87,10 +87,3 @@
   </div>
   <br /><br />
 </div>
-
-
-
-  
-    
-
-

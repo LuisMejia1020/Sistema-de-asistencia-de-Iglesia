@@ -7,8 +7,14 @@
         <div class="card border-0">
           <div>
             <div class="boton-cerrar-sesion">
-              <a class="white py-3" routerLink="/catorcepantalla"
-              routerLinkActive="active" ariaCurrentWhenActive="page" (click)="clearSession()">Cerrar sesion</a>
+              <a
+                class="white py-3"
+                routerLink="/catorcepantalla"
+                routerLinkActive="active"
+                ariaCurrentWhenActive="page"
+                (click)="clearSession()"
+                >Cerrar sesion</a
+              >
             </div>
             <div class="card-body">
               <h3 class="titulo-principal">Asistencias</h3>
@@ -19,12 +25,7 @@
                 <div class="card border-0 div-reunion">
                   <div class="contenido-reunion">
                     <h2>Mañana</h2>
-                    <a
-                      class="white py-3"
-                      routerLink="/cuartapantalla"
-                      routerLinkActive="active"
-                      ariaCurrentWhenActive="page"
-                    >
+                    <a style="color: black; text-decoration: none">
                       <ul style="list-style: none">
                         <li
                           *ngFor="let meeting of meetings | morning"
@@ -46,14 +47,15 @@
                 <div class="card border-0 div-reunion">
                   <div class="contenido-reunion">
                     <h2>Tarde</h2>
-                    <a
-                      class="white py-3"
-                      routerLink="/octavapantalla"
-                      routerLinkActive="active"
-                      ariaCurrentWhenActive="page"
-                    >
-                      <ul style="list-style: none;">
-                        <li *ngFor="let meeting of meetings | afternoon">
+                    <a style="color: black; text-decoration: none">
+                      <ul style="list-style: none">
+                        <li
+                          *ngFor="let meeting of meetings | afternoon"
+                          class="white py-3"
+                          routerLink="/octavapantalla"
+                          routerLinkActive="active"
+                          ariaCurrentWhenActive="page"
+                        >
                           la {{ meeting.nombre }} dara inicio a la hora
                           {{ meeting.inicio }}
                         </li>
