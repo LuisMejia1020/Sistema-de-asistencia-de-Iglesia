@@ -1,15 +1,4 @@
-
-<!-- Mostrar la lista de reuniones-->
-<ul>
-  <li *ngFor="let meeting of meetings">
-    {{ meeting.nombre }} ({{ meeting.lider }})
-    <button (click)="editarReunion(meeting)">Editar</button>
-    <button (click)="borrarReunion(meeting)">Borrar</button>
-  </li>
-</ul> 
-
-
-<form #usuarioForm="ngForm" (ngSubmit)="guardarReunion()">
+<!-- <form #usuarioForm="ngForm" (ngSubmit)="guardarReunion()">
   <input type="hidden" name="id" [(ngModel)]="reunionSeleccionado.id" />
   <div>
     <label for="nombre">Nombre:</label>
@@ -39,4 +28,141 @@
     />
   </div>
   <button type="submit">{{ modoEdicion ? "Actualizar" : "Crear" }}</button>
-</form> 
+</form> -->
+
+<div class="user-crud">
+  <br /><br />
+  <div class="container">
+    <div class="row align-items-center" style="height: 80vh">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+        <div class="card border-0">
+          <div>
+            <div class="contenedor-botones">
+              <div class="boton-regresar">
+                <a href="">Regresar</a>
+              </div>
+              <div class="boton-cerrar-sesion">
+                <a
+                  class="white py-3"
+                  routerLink="/catorcepantalla"
+                  routerLinkActive="active"
+                  ariaCurrentWhenActive="page"
+                  >Cerrar sesion</a
+                >
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="titulo-principal">Reuniones</h3>
+              <!-- <div class="buscador">
+                <div class="input-group mt-2">
+                  <input
+                    type="text"
+                    class="form-control input-buscador"
+                    placeholder="Buscar..."
+                  />
+                  <div class="input-group-append">
+                    <button class="btn lupa" type="button">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </div> -->
+              <div class="mb-3 mt-3">
+                <div class="overflow-auto" style="height: 380">
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item"
+                      *ngFor="let meeting of meetings"
+                    >
+                      {{ meeting.nombre }} ({{ meeting.lider }})
+                      <button
+                        class="btn btn-success float-right"
+                        (click)="editarReunion(meeting)"
+                      >
+                        Editar
+                      </button>
+                      <button
+                        class="btn btn-danger"
+                        (click)="borrarReunion(meeting)"
+                      >
+                        Borrar
+                      </button>
+                    </li>
+                  </ul>
+                  <!-- <ul class="list-group">
+                    <li
+                      class="list-group-item"
+                      *ngFor="let usuario of usuarios"
+                    >
+                      {{ usuario.nombre }} ({{ usuario.email }})
+                      <button
+                        class="btn btn-success float-right"
+                        (click)="editarUsuario(usuario)"
+                      >
+                        Editar
+                      </button>
+                      <button
+                        class="btn btn-danger"
+                        (click)="borrarUsuario(usuario)"
+                      >
+                        Borrar
+                      </button>
+                    </li>
+                  </ul> -->
+                  <br />
+                  <form #usuarioForm="ngForm" (ngSubmit)="guardarReunion()">
+                    <input
+                      type="hidden"
+                      name="id"
+                      [(ngModel)]="reunionSeleccionado.id"
+                    />
+                    <div>
+                      <label for="nombre">Nombre:</label>
+                      <input
+                        type="text"
+                        name="nombre"
+                        class="form-control"
+                        [(ngModel)]="reunionSeleccionado.nombre"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label for="lider">Lider:</label>
+                      <input
+                        type="text"
+                        name="lider"
+                        class="form-control"
+                        [(ngModel)]="reunionSeleccionado.lider"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label for="hora">Hora:</label>
+                      <input
+                        type="time"
+                        name="inicio"
+                        class="form-control"
+                        [(ngModel)]="reunionSeleccionado.inicio"
+                        required
+                      />
+                    </div>
+                    <br />
+                    <button
+                      type="submit"
+                      class="btn btn-primary btn-block border-0"
+                      style="background-color: #22296a"
+                    >
+                      {{ modoEdicion ? "Actualizar" : "Crear" }}
+                    </button>
+                  </form>
+                  <br /><br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

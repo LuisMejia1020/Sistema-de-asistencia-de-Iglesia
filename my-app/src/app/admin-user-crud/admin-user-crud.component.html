@@ -1,4 +1,4 @@
-<div class="asistencia">
+<div class="user-crud">
   <br /><br />
   <div class="container">
     <div class="row align-items-center" style="height: 80vh">
@@ -11,8 +11,14 @@
                 <a href="" (click)="goBack()">Regresar</a>
               </div>
               <div class="boton-cerrar-sesion">
-                <a class="white py-3" routerLink="/catorcepantalla"
-                routerLinkActive="active" ariaCurrentWhenActive="page" (click)="clearSession()">Cerrar sesion</a>
+                <a
+                  class="white py-3"
+                  routerLink="/catorcepantalla"
+                  routerLinkActive="active"
+                  ariaCurrentWhenActive="page"
+                  (click)="clearSession()"
+                  >Cerrar sesion</a
+                >
               </div>
             </div>
             <div class="card-body">
@@ -44,9 +50,8 @@
                         (click)="editarUsuario(usuario)"
                       >
                         Editar
-                      </button>
+                      </button> 
                       <button
-                      
                         class="btn btn-danger"
                         (click)="borrarUsuario(usuario)"
                       >
@@ -97,7 +102,6 @@
           </div>
         </div>
       </div>
-
       <div>
         <!-- <h2>Usuarios</h2> -->
 
