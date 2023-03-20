@@ -18,11 +18,22 @@
                 <div class="card border-0 div-reunion-reportes">
                   <div class="contenido-reunion">
                     <h2>Reportes mañana</h2>
-                    <a class="white py-3" routerLink="/oncepantalla"
-                    routerLinkActive="active" ariaCurrentWhenActive="page">
-                      <ul>
-                        <li *ngFor="let reporte of reportes | manana ">
-                          Este es el reporte de la reunion de {{reporte.inicio}}
+                    <a
+                      class="white py-3"
+                      routerLink="/oncepantalla"
+                      routerLinkActive="active"
+                      ariaCurrentWhenActive="page"
+                    >
+                      <ul style="list-style: none">
+                        <li
+                          *ngFor="let reporte of reportes | manana"
+                          class="white py-3"
+                          routerLink="/oncepantalla"
+                          routerLinkActive="active"
+                          ariaCurrentWhenActive="page"
+                        >
+                          Este es el reporte de la reunion de
+                          {{ reporte.inicio }}
                         </li>
                       </ul>
                       <span>70 de 120 asistentes</span>
@@ -34,11 +45,22 @@
                 <div class="card border-0 div-reunion-reportes">
                   <div class="contenido-reunion">
                     <h2>Reportes tarde</h2>
-                    <a class="white py-3" routerLink="/docepantalla"
-                    routerLinkActive="active" ariaCurrentWhenActive="page">
-                      <ul>
-                        <li *ngFor="let reporte of reportes | tarde ">
-                          Este es el reporte de la reunion de {{reporte.inicio}}
+                    <a
+                      class="white py-3"
+                      routerLink="/docepantalla"
+                      routerLinkActive="active"
+                      ariaCurrentWhenActive="page"
+                    >
+                      <ul style="list-style: none">
+                        <li
+                          *ngFor="let reporte of reportes | tarde"
+                          class="white py-3"
+                          routerLink="/docepantalla"
+                          routerLinkActive="active"
+                          ariaCurrentWhenActive="page"
+                        >
+                          Este es el reporte de la reunion de
+                          {{ reporte.inicio }}
                         </li>
                       </ul>
                       <span>0 de 120 asistentes</span>
@@ -49,9 +71,15 @@
               <div class="mb-3 mt-3" id="crudUsuarios">
                 <div class="card border-0 div-crud">
                   <div class="contenido-reunion">
-                    <a class="white py-3" routerLink="/novenapantalla"
-                    routerLinkActive="active" ariaCurrentWhenActive="page">
-                      <h5><i class="fa-solid fa-screwdriver-wrench"></i> Usuarios</h5>
+                    <a
+                      class="white py-3"
+                      routerLink="/novenapantalla"
+                      routerLinkActive="active"
+                      ariaCurrentWhenActive="page"
+                    >
+                      <h5>
+                        <i class="fa-solid fa-screwdriver-wrench"></i> Usuarios
+                      </h5>
                     </a>
                   </div>
                 </div>
@@ -59,9 +87,15 @@
               <div class="mb-3 mt-3" id="crudReuniones">
                 <div class="card border-0 div-crud">
                   <div class="contenido-reunion">
-                    <a class="white py-3" routerLink="/decimapantalla"
-                    routerLinkActive="active" ariaCurrentWhenActive="page">
-                      <h5><i class="fa-solid fa-screwdriver-wrench"></i> Reuniones</h5>
+                    <a
+                      class="white py-3"
+                      routerLink="/decimapantalla"
+                      routerLinkActive="active"
+                      ariaCurrentWhenActive="page"
+                    >
+                      <h5>
+                        <i class="fa-solid fa-screwdriver-wrench"></i> Reuniones
+                      </h5>
                     </a>
                   </div>
                 </div>

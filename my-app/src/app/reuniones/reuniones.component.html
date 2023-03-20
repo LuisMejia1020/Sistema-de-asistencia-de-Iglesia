@@ -18,15 +18,26 @@
                 <div class="card border-0 div-reunion">
                   <div class="contenido-reunion">
                     <h2>Mañana</h2>
-                    <a class="white py-3" routerLink="/cuartapantalla"
-                    routerLinkActive="active" ariaCurrentWhenActive="page">
-                      <ul>
-                        <li *ngFor="let meeting of meetings | morning">
-                          la {{ meeting.nombre }} dara inicio a la hora {{ meeting.inicio }}
+                    <a
+                      class="white py-3"
+                      routerLink="/cuartapantalla"
+                      routerLinkActive="active"
+                      ariaCurrentWhenActive="page"
+                    >
+                      <ul style="list-style: none">
+                        <li
+                          *ngFor="let meeting of meetings | morning"
+                          class="white py-3"
+                          routerLink="/cuartapantalla"
+                          routerLinkActive="active"
+                          ariaCurrentWhenActive="page"
+                        >
+                          la {{ meeting.nombre }} dara inicio a la hora
+                          {{ meeting.inicio }}
                         </li>
                       </ul>
-                      <span>70 de 120 asistentes</span>
                     </a>
+                    <span>70 de 120 asistentes</span>
                   </div>
                 </div>
               </div>
@@ -34,15 +45,19 @@
                 <div class="card border-0 div-reunion">
                   <div class="contenido-reunion">
                     <h2>Tarde</h2>
-                    <a class="white py-3" routerLink="/octavapantalla"
-                    routerLinkActive="active" ariaCurrentWhenActive="page">
-                      <ul>
+                    <a
+                      class="white py-3"
+                      routerLink="/octavapantalla"
+                      routerLinkActive="active"
+                      ariaCurrentWhenActive="page"
+                    >
+                      <ul style="list-style: none;">
                         <li *ngFor="let meeting of meetings | afternoon">
-                          la {{ meeting.nombre }} dara inicio a la hora {{ meeting.inicio }}
+                          la {{ meeting.nombre }} dara inicio a la hora
+                          {{ meeting.inicio }}
                         </li>
-                      </ul>
-                      <span>0 de 120 asistentes</span>
-                    </a>
+                      </ul> </a
+                    ><span>0 de 120 asistentes</span>
                   </div>
                 </div>
               </div>
@@ -67,7 +82,6 @@
 </ul> -->
 
 <!-- Formulario para crear o actualizar usuarios -->
-
 
 <!-- <div class="container">
   <h2>Reuniones</h2>
