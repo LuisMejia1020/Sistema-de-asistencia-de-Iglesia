@@ -8,10 +8,11 @@
           <div>
             <div class="contenedor-botones">
               <div class="boton-regresar">
-                <a href="">Regresar</a>
+                <a href="" (click)="goBack()">Regresar</a>
               </div>
               <div class="boton-cerrar-sesion">
-                <a href="">Cerrar sesion</a>
+                <a class="white py-3" routerLink="/catorcepantalla"
+                routerLinkActive="active" ariaCurrentWhenActive="page" (click)="clearSession()">Cerrar sesion</a>
               </div>
             </div>
             <div class="card-body">

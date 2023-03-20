@@ -1,4 +1,5 @@
 import { Component, Pipe, PipeTransform } from '@angular/core';
+import { Location } from '@angular/common';
 
 interface IReportes {
   id: number
@@ -35,6 +36,10 @@ export class NuevaPipe implements PipeTransform {
 })
 export class ReporteEspecificoComponent {
 
+  constructor(private location: Location){
+
+  }
+
   reportesNuevos: IAsistencia = {
     nombre: '',
     type: 'faltante'
@@ -53,6 +58,16 @@ export class ReporteEspecificoComponent {
    {nombre: 'Karla Castro', type:'faltante'},
 
   ]
+
+  clearSession(){
+    console.log("Hasta luego te esperamos pronto")
+    alert("tu sesion ha terminado")
+  }
+
+  goBack() {
+    this.location.back();
+  }
+
   
 
 }

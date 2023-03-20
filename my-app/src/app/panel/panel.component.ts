@@ -44,4 +44,9 @@ export class PanelComponent {
     {id:1, numeroAsistencia: 12, inicio: '4:00 pm', personasFaltantes: 'Carlos Perez, Monica Flores', personasNuevas:'Jair Lopez, Thor Odinson'}
   ]
 
+  clearSession(){
+    console.log("Hasta luego te esperamos pronto")
+    alert("tu sesion ha terminado")
+  }
+
 }

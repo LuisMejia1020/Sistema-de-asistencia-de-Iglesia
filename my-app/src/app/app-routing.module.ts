@@ -28,6 +28,9 @@ const routes: Routes = [
   {path: 'oncepantalla', component: ReporteEspecificoComponent,},
   {path: 'docepantalla', component: ReporteEspecificoComponent,},
   {path: 'trecepantalla', component: AsistenciaComponent,},
+  {path: 'catorcepantalla', component: AccederSistemaUsuarioComponent,},
+  {path: 'default', component: AccederSistemaUsuarioComponent,},
+
 ];
 
 
