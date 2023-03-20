@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-asistencia',
@@ -6,6 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./asistencia.component.css']
 })
 export class AsistenciaComponent {
+
+  constructor(private location: Location){
+
+  }
   asistenciaRegistrada = false;
 
   registrarAsistencia(){
@@ -27,4 +32,9 @@ export class AsistenciaComponent {
     console.log("Hasta luego te esperamos pronto")
     alert("tu sesion ha terminado")
   }
+
+  goBack() {
+    this.location.back();
+  }
+
 }

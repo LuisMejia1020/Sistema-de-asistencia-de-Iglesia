@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Location } from '@angular/common';
 
 
 interface IUsuario {
@@ -13,6 +14,11 @@ interface IUsuario {
   styleUrls: ['./admin-user-crud.component.css']
 })
 export class AdminUserCrudComponent {
+
+  constructor(private location: Location){
+
+  }
+
   usuarios: IUsuario[] = [
     { id: 1, nombre: 'Juan', email: 'juan@gmail.com' },
     { id: 2, nombre: 'Pedro', email: 'pedro@gmail.com' },
@@ -56,4 +62,10 @@ export class AdminUserCrudComponent {
     console.log("Hasta luego te esperamos pronto")
     alert("tu sesion ha terminado")
   }
+
+  goBack() {
+    this.location.back();
+  }
+
+
 }

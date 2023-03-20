@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IRegistroUsuario } from '../interfaces/interface';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-registro-usuario',
@@ -7,6 +8,8 @@ import { IRegistroUsuario } from '../interfaces/interface';
   styleUrls: ['./registro-usuario.component.css']
 })
 export class RegistroUsuarioComponent {
+
+  
  
  primerNombre:IRegistroUsuario[]=[]
  segundoNombre:IRegistroUsuario[]=[]
@@ -16,7 +19,7 @@ export class RegistroUsuarioComponent {
  email:IRegistroUsuario[] = []
  password:IRegistroUsuario[]=[]
 
- constructor(){
+ constructor(private location: Location){
   this.primerNombre=[]
   this.segundoNombre=[]
   this.primerApellido=[]
@@ -34,5 +37,9 @@ export class RegistroUsuarioComponent {
   clearSession(){
     console.log("Hasta luego te esperamos pronto")
     alert("tu sesion ha terminado")
+  }
+
+  goBack() {
+    this.location.back();
   }
 }
