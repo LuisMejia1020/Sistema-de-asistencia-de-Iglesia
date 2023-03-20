@@ -42,9 +42,7 @@
                 <p>Acceda al sistema con su usuario</p>
               </div>
               <div class="d-grid">
-                <a class="white py-3" routerLink="/primerapantalla"
-                routerLinkActive="active" ariaCurrentWhenActive="page">
-                  <button
+                <button
                   type="submit"
                   class="btn btn-lg btn-block"
                   style="
@@ -52,18 +50,17 @@
                     color: white;
                     border-radius: 15px;
                   "
+                  routerLink="/primerapantalla"
+                  routerLinkActive="active"
+                  ariaCurrentWhenActive="page"
                   (click)="setTipoUsuario('admin')"
                 >
                   Administrador
                 </button>
-                </a>
-               
               </div>
               <br />
               <div class="d-grid">
-                <a class="white py-3" routerLink="/segundapantalla"
-                routerLinkActive="active" ariaCurrentWhenActive="page">
-                  <button
+                <button
                   type="submit"
                   class="btn btn-lg btn-block"
                   style="
@@ -71,12 +68,13 @@
                     color: white;
                     border-radius: 15px;
                   "
+                  routerLink="/segundapantalla"
+                  routerLinkActive="active"
+                  ariaCurrentWhenActive="page"
                   (click)="setTipoUsuario('normal')"
                 >
                   Colaborador
                 </button>
-                </a>
-               
               </div>
             </form>
           </div>
