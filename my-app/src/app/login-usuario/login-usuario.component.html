@@ -71,10 +71,7 @@
                 />
               </div>
               <div class="d-grid">
-                
-                <a class="white py-3" routerLink="/tercerapantalla"
-                routerLinkActive="active" ariaCurrentWhenActive="page">
-                  <button
+                <button
                   type="submit"
                   class="btn btn-block"
                   style="
@@ -82,11 +79,13 @@
                     color: white;
                     border-radius: 15px;
                   "
+                  routerLink="/tercerapantalla"
+                  routerLinkActive="active"
+                  ariaCurrentWhenActive="page"
                   (click)="iniciarSesion('janiflores@gmail.com', 'royale')"
                 >
                   Iniciar Sesion
                 </button>
-                </a>
               </div>
             </form>
           </div>
