@@ -1,7 +1,49 @@
-<p>lista-usuarios works!</p>
-
-<h2>Lista de Usuarios</h2>
-    <ul>
-      <li *ngFor="let user of users">El nombre de este usuario es {{user.nombre}} y su correo es {{user.email}}
-      </li>
-    </ul>
+<div class="lista-usuarios" style="color: #22296a">
+  <br /><br />
+  <div class="container">
+    <div class="row align-items-center" style="height: 80vh">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+        <div class="card border-0">
+          <div>
+            <div class="contenedor-botones">
+              <div class="boton-regresar">
+                <a href="">Regresar</a>
+              </div>
+              <div class="boton-cerrar-sesion">
+                <a
+                  class="white py-3"
+                  routerLink="/catorcepantalla"
+                  routerLinkActive="active"
+                  ariaCurrentWhenActive="page"
+                  >Cerrar sesion</a
+                >
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="titulo-principal">Lista Usuarios</h3>
+              <div class="mb-3 mt-3">
+                <div class="overflow-auto">
+                  <ul class="list-group">
+                    <li *ngFor="let user of users">
+                      El nombre de este usuario es {{ user.nombre }} y su correo
+                      es
+                      {{ user.email }}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- <h2>Lista de Usuarios</h2>
+            <ul>
+              <li *ngFor="let user of users">
+                El nombre de este usuario es {{ user.nombre }} y su correo es
+                {{ user.email }}
+              </li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
